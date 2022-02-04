@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="appWrap">
+    <div id="appWrap">
      <BottomRow />
     </div>
   );

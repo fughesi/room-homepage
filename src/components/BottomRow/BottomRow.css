@@ -1,11 +1,23 @@
 @import url(../../App.css);
 
 #bottomContainer {
+  grid-area: b;
   display: flex;
   flex-direction: column;
 
   width: 375px;
 }
 #bottomText {
-  padding: 1em;
+  padding: 2em 1em;
+}
+
+#bottomText h3 {
+  font-weight: var(--bold);
+  font-size: var(--sub2);
+}
+
+#bottomText p {
+    line-height: 1.5em;;
+  font-weight: var(--thin);
+  font-size: var(--sub4);
 }
