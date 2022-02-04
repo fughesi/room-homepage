@@ -1,0 +1,11 @@
+@import url(../../App.css);
+
+#bottomContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 375px;
+}
+#bottomText {
+  padding: 1em;
+}
