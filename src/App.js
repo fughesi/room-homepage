@@ -1,10 +1,14 @@
-import BottomRow from "./components/BottomRow/BottomRow"
-import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import BottomRow from "./components/BottomRow/BottomRow";
+import TopRow from "./components/TopRow/TopRow";
+import "./App.css";
 
 function App() {
   return (
     <div id="appWrap">
-     <BottomRow />
+      <Navbar />
+      <TopRow />
+      <BottomRow />
     </div>
   );
 }

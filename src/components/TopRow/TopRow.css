@@ -1,0 +1,10 @@
+@import url(../../App.css);
+
+#topContainer {
+  grid-area: a;
+  width: 75%;
+}
+#topContainer img {
+    display: inline-block;
+  width: 100%;
+}

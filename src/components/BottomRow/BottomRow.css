@@ -17,7 +17,7 @@
 }
 
 #bottomText p {
-    line-height: 1.5em;;
+  line-height: 1.5em;
   font-weight: var(--thin);
   font-size: var(--sub4);
 }
