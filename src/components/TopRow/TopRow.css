@@ -4,7 +4,41 @@
   grid-area: a;
   width: 75%;
 }
-#topContainer img {
-    display: inline-block;
+#topPhotoContainer {
+  position: relative;
+
   width: 100%;
+}
+
+#topContainer img {
+  display: inline-block;
+  overflow: hidden;
+  /* width: 100%; */
+  width: minmax(100%, 375px);
+}
+
+#arrowButtons {
+  position: absolute;
+  bottom: 5px;
+  left: 100%;
+  display: flex;
+  fill: #fff;
+}
+
+#leftArrow,
+#rightArrow {
+  padding: 2rem;
+  margin: 0;
+
+  background-color: #000;
+}
+#topContainer h3 {
+  font-size: var(--sub2);
+  font-weight: var(--bold);
+  line-height: 1.5rem;
+}
+#topContainer p {
+  line-height: 1.5em;
+  font-weight: var(--thin);
+  font-size: var(--sub4);
 }
