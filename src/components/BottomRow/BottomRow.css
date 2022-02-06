@@ -14,10 +14,12 @@
 #bottomText h3 {
   font-weight: var(--bold);
   font-size: var(--sub2);
+  color: var(--black);
 }
 
 #bottomText p {
-  line-height: 1.5em;
+  line-height: var(--LH);
   font-weight: var(--thin);
   font-size: var(--sub4);
+  color: var(--darkGray);
 }

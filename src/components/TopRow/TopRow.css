@@ -2,25 +2,23 @@
 
 #topContainer {
   grid-area: a;
-  width: 75%;
-}
-#topPhotoContainer {
-  position: relative;
-
   width: 100%;
 }
-
-#topContainer img {
+#topPhotoContainer {
+  width: 100%;
+  position: relative;
+}
+#mainPhoto img {
   display: inline-block;
   overflow: hidden;
-  /* width: 100%; */
+  width: 100%;
   width: minmax(100%, 375px);
 }
 
 #arrowButtons {
   position: absolute;
   bottom: 5px;
-  left: 100%;
+  right: 0;
   display: flex;
   fill: #fff;
 }
@@ -41,4 +39,23 @@
   line-height: 1.5em;
   font-weight: var(--thin);
   font-size: var(--sub4);
+}
+#descriptiveText {
+  padding: 2rem 1rem;
+}
+
+#descriptiveText h3 {
+  font-weight: var(--bold);
+  font-size: var(--0);
+  color: var(--black);
+}
+#descriptiveText p {
+  line-height: var(--LH);
+  font-weight: var(--thin);
+  font-size: var(--sub4);
+  color: var(--darkGray);
+}
+#descriptiveText a {
+  text-decoration: none;
+  color: var(--veryDarkGray);
 }

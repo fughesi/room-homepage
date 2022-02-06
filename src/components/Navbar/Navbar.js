@@ -4,12 +4,18 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <div id="navContainer">
-      <ul>
-        <li>home</li>
-        <li>shop</li>
-        <li>about</li>
-        <li>contact</li>
-      </ul>
-    </div>
+      <input type="checkbox" id="toggler" />
+      <div id="hamburger">
+        <div></div>
+      </div>
+      {/* <div id="navMenu">
+    </div> */}
+        <ul id="navBar">
+          <li>home</li>
+          <li>shop</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </div>
   );
 }

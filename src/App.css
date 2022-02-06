@@ -19,6 +19,9 @@
   --thin: 500;
   --reg: 600;
   --bold: 700;
+
+  /* line height */
+  --LH: 1.5em
 }
 
 *,
@@ -34,6 +37,7 @@ body {
 
 #appWrap {
   display: grid;
+  position: relative;
   grid-template: auto auto / calc(50vw - 187.5px) 375px auto;
 
   grid-template-areas:
@@ -46,5 +50,4 @@ body {
 
 /* - Mobile: 375px
 - Desktop: 1440px
-
-- Font size: 12px */
+*/
