@@ -19,16 +19,21 @@
   position: absolute;
   bottom: 5px;
   right: 0;
+
   display: flex;
-  fill: #fff;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 1rem;
+  width: 112px;
+  height: 56px;
+  background-color: #000;
 }
 
 #leftArrow,
 #rightArrow {
-  padding: 2rem;
-  margin: 0;
-
-  background-color: #000;
+  transform: scale(0.65) translateY(7.5px);
 }
 #topContainer h3 {
   font-size: var(--sub2);
@@ -41,21 +46,34 @@
   font-size: var(--sub4);
 }
 #descriptiveText {
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 #descriptiveText h3 {
+  margin: 1.25em 0 0 0;
+  line-height: var(--LHH3);
   font-weight: var(--bold);
-  font-size: var(--0);
+  font-size: var(--1);
   color: var(--black);
 }
 #descriptiveText p {
+  margin: 1.45em 0 0 0;
   line-height: var(--LH);
   font-weight: var(--thin);
-  font-size: var(--sub4);
+  font-size: var(--sub3);
   color: var(--darkGray);
 }
 #descriptiveText a {
+  display: inline-block;
+  margin: 4.45em 0 3.5em 0;
+  
   text-decoration: none;
+  font-size: var(--sub4);
+  letter-spacing: var(--LSText);
+  font-weight: var(--reg);
   color: var(--veryDarkGray);
+}
+
+#descriptiveText > svg {
+  transform: scale(.75) translateX(50%);
 }

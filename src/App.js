@@ -1,3 +1,4 @@
+import React from 'react';
 import BottomRow from "./components/BottomRow/BottomRow";
 import TopRow from "./components/TopRow/TopRow";
 import "./App.css";

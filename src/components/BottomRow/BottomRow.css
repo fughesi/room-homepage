@@ -8,18 +8,21 @@
   width: 375px;
 }
 #bottomText {
-  padding: 2em 1em;
+  padding: 2em 2em;
 }
 
 #bottomText h3 {
+  margin: 2.25em 0 0 0;
   font-weight: var(--bold);
-  font-size: var(--sub2);
+  font-size: var(--sub3);
+  letter-spacing: 0.41em;
   color: var(--black);
 }
 
 #bottomText p {
+  margin: 1.15em 0 2em 0;
   line-height: var(--LH);
   font-weight: var(--thin);
-  font-size: var(--sub4);
+  font-size: var(--sub3);
   color: var(--darkGray);
 }
