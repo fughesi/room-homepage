@@ -77,10 +77,15 @@
   background-color: var(--white);
 }
 #navBar li {
-  padding: 0 1.1em 0 1.5em;
   list-style: none;
+}
+
+#navBar li a {
+  padding: 0 1.1em 0 1.5em;
+  text-decoration: none;
   font-weight: var(--reg);
   font-size: var(--sub3);
+  color: var(--veryDarkGray);
 }
 
 /* states */

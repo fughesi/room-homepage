@@ -7,6 +7,12 @@
 
   width: 375px;
 }
+
+#leftPic {
+  /* background-image: url("../../images/image-about-dark.jpg"); */
+  /* height: 200px; */
+}
+
 #bottomText {
   padding: 2em 2em;
 }
@@ -25,4 +31,17 @@
   font-weight: var(--thin);
   font-size: var(--sub3);
   color: var(--darkGray);
+}
+
+#rightPic {
+  /* background-image: url("../../images/image-about-dark.jpg"); */
+  /* height: 200px; */
+}
+
+@media (min-width: 375px) {
+  #bottomContainer {
+    display: flex;
+    flex-direction: row;
+    /* grid-template: 250px / repeat(3, 1fr); */
+  }
 }

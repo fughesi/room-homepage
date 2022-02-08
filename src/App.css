@@ -55,6 +55,16 @@ body {
 }
 
 @media (min-width: 375px) {
+  #appWrap {
+    grid-template: 10px auto auto auto 10px / auto 900px auto;
+
+    grid-template-areas:
+      ". . ."
+      ". a ."
+      ". b ."
+      ". c ."
+      ". . .";
+  }
 }
 
 /* - Mobile: 375px
