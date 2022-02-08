@@ -1,7 +1,7 @@
 @import url(../../App.css);
 
 #bottomContainer {
-  grid-area: b;
+  grid-area: c;
   display: flex;
   flex-direction: column;
 

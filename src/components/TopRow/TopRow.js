@@ -11,29 +11,37 @@ import hero3d from "../../images/desktop-image-hero-3.jpg";
 export default function TopRow() {
   return (
     <div id="topContainer">
+        {/* <Navbar /> */}
       <section id="topPhotoContainer">
-        <Navbar />
         <div id="mainPhoto">
           {(
             <img srcSet={`${hero1m} 375w,${hero1d} 840w`} alt="hero image" />
           ) || <img src={hero1m} alt="hero image" />}
         </div>
         <div id="arrowButtons">
-          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="14"
+            height="24"
+            id="leftArrow"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M13 0L1 12l12 12"
               stroke="#FFF"
               fill="none"
-              id="leftArrow"
               fill-rule="evenodd"
-              />
+            />
           </svg>
-          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="14"
+            height="24"
+            id="rightArrow"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M1  0l12 12L1 24"
               stroke="#FFF"
               fill="none"
-              id="rightArrow"
               fill-rule="evenodd"
             />
           </svg>

@@ -6,10 +6,9 @@ export default function Navbar() {
     <div id="navContainer">
       <input type="checkbox" id="toggler" />
       <div id="hamburger">
-        <div></div>
+        <div id="hamburgerLinesAreHere"></div>
       </div>
-      {/* <div id="navMenu">
-    </div> */}
+      <div id="navMenu">
         <ul id="navBar">
           <li>home</li>
           <li>shop</li>
@@ -17,5 +16,6 @@ export default function Navbar() {
           <li>contact</li>
         </ul>
       </div>
+    </div>
   );
 }

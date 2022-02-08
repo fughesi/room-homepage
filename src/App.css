@@ -38,21 +38,19 @@ body {
   margin: 0;
   font-family: "Spartan", sans-serif;
 
-
-
-
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 #appWrap {
   display: grid;
   position: relative;
-  grid-template: 10px auto auto 10px / calc(50vw - 187.5px) 375px auto;
+  grid-template: 10px auto auto auto 10px / calc(50vw - 187.5px) 375px auto;
 
   grid-template-areas:
     ". . ."
     ". a ."
     ". b ."
+    ". c ."
     ". . .";
 }
 
