@@ -39,9 +39,22 @@
 }
 
 @media (min-width: 375px) {
+  #bottomText {
+    padding: .5em;
+  }
+  #bottomText h3 {
+    font-size: var(--sub4);
+  }
+  #bottomText p {
+font-size: var(--sub4);
+  }
   #bottomContainer {
-    display: flex;
-    flex-direction: row;
-    /* grid-template: 250px / repeat(3, 1fr); */
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+  }
+  #leftPic,
+  #rightPic {
+    width: 100%;
   }
 }

@@ -6,9 +6,9 @@ import RightPic from "../../images/image-about-light.jpg";
 export default function BottomRow() {
   return (
     <main id="bottomContainer">
-      <div id="leftPic">
-        <img src={LeftPic} alt="left pic" />
-      </div>
+      <img src={LeftPic} alt="left pic" id="leftPic" />
+      {/* <div >
+      </div> */}
       <div id="bottomText">
         <h3>ABOUT OUR FURNITURE</h3>
         <p>
@@ -20,9 +20,9 @@ export default function BottomRow() {
           dream space.
         </p>
       </div>
-      <div id="rightPic">
-        <img src={RightPic} alt="right pic" />
-      </div>
+      <img src={RightPic} alt="right pic" id="rightPic" />
+      {/* <div >
+      </div> */}
     </main>
   );
 }
