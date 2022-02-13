@@ -8,11 +8,23 @@
   width: 100%;
   position: relative;
 }
-#mainPhoto img {
+#mainPhoto {
+  position: relative;
+}
+#mainPhoto #photoDiv {
   display: inline-block;
-  overflow: hidden;
   width: 100%;
   width: minmax(100%, 375px);
+  object-fit: cover;
+}
+#mainPhoto::after {
+  position: absolute;
+  content: "room";
+  top: 25px;
+  left: calc(50% - var(--0));
+  color: var(--white);
+  font-size: var(--0);
+  font-weight: var(--bold);
 }
 
 #arrowButtons {
@@ -80,16 +92,19 @@
 
 @media (min-width: 375px) {
   #topContainer {
+    position: relative;
     display: grid;
-    grid-template: 360px / 1.5fr 1fr;
+    grid-template: 350px / 1.5fr 1fr;
     grid-template-areas: "x y";
   }
   #topPhotoContainer {
     grid-area: x;
+    align-self: end;
   }
   #descriptiveText {
     grid-area: y;
     height: 75%;
+    /* align-self: center; */
   }
   #descriptiveText h3 {
     font-size: var(--0);
@@ -97,10 +112,7 @@
   #descriptiveText p {
     font-size: var(--sub4);
   }
-  #rightPic {
-    height: 190px;
-  }
-  #mainPhoto {
-    object-fit: cover;
+  #photoDiv {
+    height: 100%;
   }
 }

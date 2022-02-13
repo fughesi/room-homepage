@@ -37,36 +37,27 @@
 body {
   margin: 0;
   font-family: "Spartan", sans-serif;
-
-  /* background-color: gray; */
 }
 
 #appWrap {
   display: grid;
   position: relative;
-  grid-template: 10px auto auto auto 10px / calc(50vw - 187.5px) 375px auto;
+  grid-template: auto auto auto / calc(50vw - 187.5px) 375px auto;
 
   grid-template-areas:
-    ". . ."
     ". a ."
     ". b ."
-    ". c ."
-    ". . .";
+    ". c .";
 }
 
 @media (min-width: 375px) {
   #appWrap {
-    grid-template: 10px auto auto  / auto 900px auto;
-gap: 0;
-    grid-template-areas:
-      ". . ."
-      ". a ."
-      ". b ."
-      ". c ."
-      ". . .";
+    grid-template: 10px auto auto /  1000px ;
+    gap: 0;
+    grid-template-areas:  
+      " a "
+      " b "
+      " c " ;
   }
 }
 
-/* - Mobile: 375px
-- Desktop: 1440px
-*/

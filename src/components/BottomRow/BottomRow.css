@@ -8,11 +8,6 @@
   width: 375px;
 }
 
-#leftPic {
-  /* background-image: url("../../images/image-about-dark.jpg"); */
-  /* height: 200px; */
-}
-
 #bottomText {
   padding: 2em 2em;
 }
@@ -33,28 +28,26 @@
   color: var(--darkGray);
 }
 
-#rightPic {
-  /* background-image: url("../../images/image-about-dark.jpg"); */
-  /* height: 200px; */
-}
-
 @media (min-width: 375px) {
+  #bottomContainer {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1.25fr 1fr;
+    place-items: center;
+  }
   #bottomText {
-    padding: .5em;
+    padding: 1.75em;
   }
   #bottomText h3 {
     font-size: var(--sub4);
   }
   #bottomText p {
-font-size: var(--sub4);
-  }
-  #bottomContainer {
-    width: 100%;
-    display: grid;
-    grid-template: 1fr / repeat(3, 1fr);
+    font-size: 0.5rem;
   }
   #leftPic,
   #rightPic {
     width: 100%;
+    align-self: flex-end;
+    object-fit: cover;
   }
 }

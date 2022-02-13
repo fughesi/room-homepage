@@ -114,3 +114,16 @@
   display: block;
   transition: all 250ms ease;
 }
+
+@media (min-width: 375px) {
+  #navBar {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  #navBar li a {
+    color: var(--white);
+  }
+  #navMenu {
+    display: block;
+    position: absolute;
+  }
+}

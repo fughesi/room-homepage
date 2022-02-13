@@ -6,7 +6,13 @@ import RightPic from "../../images/image-about-light.jpg";
 export default function BottomRow() {
   return (
     <main id="bottomContainer">
-      <img src={LeftPic} alt="left pic" id="leftPic" />
+      <img
+        src={LeftPic}
+        alt="left pic"
+        id="leftPic"
+        height="100%"
+        width="100%"
+      />
       {/* <div >
       </div> */}
       <div id="bottomText">
@@ -20,7 +26,13 @@ export default function BottomRow() {
           dream space.
         </p>
       </div>
-      <img src={RightPic} alt="right pic" id="rightPic" />
+      <img
+        src={RightPic}
+        alt="right pic"
+        id="rightPic"
+        height="100%"
+        width="100%"
+      />
       {/* <div >
       </div> */}
     </main>
