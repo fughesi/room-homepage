@@ -56,8 +56,8 @@ body {
 
 @media (min-width: 375px) {
   #appWrap {
-    grid-template: 10px auto auto auto 10px / auto 900px auto;
-
+    grid-template: 10px auto auto  / auto 900px auto;
+gap: 0;
     grid-template-areas:
       ". . ."
       ". a ."

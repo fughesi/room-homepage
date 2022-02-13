@@ -80,10 +80,27 @@
 
 @media (min-width: 375px) {
   #topContainer {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template: 360px / 1.5fr 1fr;
+    grid-template-areas: "x y";
   }
   #topPhotoContainer {
-    width: 65%;
+    grid-area: x;
+  }
+  #descriptiveText {
+    grid-area: y;
+    height: 75%;
+  }
+  #descriptiveText h3 {
+    font-size: var(--0);
+  }
+  #descriptiveText p {
+    font-size: var(--sub4);
+  }
+  #rightPic {
+    height: 190px;
+  }
+  #mainPhoto {
+    object-fit: cover;
   }
 }
