@@ -7,10 +7,8 @@
   left: 0px;
   z-index: 2;
 }
-#navContainer #toggler {
+#toggler {
   position: absolute;
-  top: 20px;
-  left: 15px;
   z-index: 2;
 
   height: 50px;
@@ -71,12 +69,12 @@
   height: 75px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 
   margin: 0;
   background-color: var(--white);
 }
 #navBar li {
+  display: flex;
   list-style: none;
 }
 
@@ -118,11 +116,12 @@
 @media (min-width: 375px) {
   #navBar {
     background-color: rgba(0, 0, 0, 0);
-    width: 60%;
+    width: 40%;
     position: absolute;
     justify-content: center;
   }
   #navBar li a {
+    font-size: var(--sub4);
     color: var(--white);
   }
   #toggler,
@@ -130,5 +129,15 @@
   #hamburgerLinesAreHere {
     display: none;
     visibility: hidden;
+  }
+  #navBar::after {
+    position: absolute;
+    content: "room";
+    top: 20px;
+    left: calc(10% - var(--0));
+    color: var(--white);
+    font-size: var(--0);
+    font-weight: var(--bold);
+    z-index: 5;
   }
 }

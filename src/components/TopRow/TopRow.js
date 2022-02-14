@@ -11,40 +11,49 @@ import hero3d from "../../images/desktop-image-hero-3.jpg";
 export default function TopRow() {
   return (
     <div id="topContainer">
-        {/* <Navbar /> */}
       <section id="topPhotoContainer">
         {/* <div  id="mainPhoto"> */}
-          {(
-            <img  id="photoDiv" srcSet={`${hero1m} 375w,${hero1d} 840w`} alt="hero image" height="100%" width="100%"/>
-          ) || <img src={hero1m} alt="hero image" />}
+        {(
+          <img
+            id="photoDiv"
+            srcSet={`${hero1m} 375w,${hero1d} 840w`}
+            alt="hero image"
+            height="100%"
+            width="100%"
+          />
+        ) || <img src={hero1m} alt="hero image" />}
         {/* </div> */}
         <div id="arrowButtons">
-          <svg
-            width="14"
-            height="24"
-            id="leftArrow"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13 0L1 12l12 12"
-              stroke="#FFF"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
-          <svg
-            width="14"
-            height="24"
-            id="rightArrow"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1  0l12 12L1 24"
-              stroke="#FFF"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
+          <div id="leftButton">
+            <svg
+              width="14"
+              height="24"
+              id="leftArrow"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 0L1 12l12 12"
+                stroke="#FFF"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div id="rightButton">
+            <svg
+              width="14"
+              height="24"
+              id="rightArrow"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1  0l12 12L1 24"
+                stroke="#FFF"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </section>
       <section id="descriptiveText">

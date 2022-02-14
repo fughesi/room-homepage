@@ -4,8 +4,8 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <div id="navContainer">
-      <input type="checkbox" id="toggler" />
       <div id="hamburger">
+      <input type="checkbox" id="toggler" />
         <div id="hamburgerLinesAreHere"></div>
       </div>
       {/* <div id="navMenu"> */}

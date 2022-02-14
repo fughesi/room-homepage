@@ -33,19 +33,25 @@
   right: 0;
 
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-
-  padding: 1rem;
-  width: 112px;
-  height: 56px;
-  background-color: #000;
 }
-
 #leftArrow,
 #rightArrow {
   transform: scale(0.75);
+}
+#leftButton,
+#rightButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 56px;
+  height: 56px;
+  background-color: #000;
+}
+#leftButton:hover,
+#rightButton:hover {
+  background-color: var(--darkGray);
+  cursor: pointer;
 }
 #topContainer h3 {
   font-size: var(--sub2);
@@ -102,9 +108,14 @@
     height: 100%;
     align-self: end;
   }
+  #arrowButtons {
+    bottom: 0px;
+    right: -112px;
+  }
   #descriptiveText {
     grid-area: y;
     height: 100%;
+    padding-left: 3rem;
   }
   #descriptiveText h3 {
     font-size: var(--0);
