@@ -8,14 +8,14 @@ export default function Navbar() {
       <div id="hamburger">
         <div id="hamburgerLinesAreHere"></div>
       </div>
-      <div id="navMenu">
+      {/* <div id="navMenu"> */}
         <ul id="navBar">
           <li><a href="#">home</a></li>
           <li><a href="#">shop</a></li>
           <li><a href="#">about</a></li>
           <li><a href="#">contact</a></li>
         </ul>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

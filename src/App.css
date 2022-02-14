@@ -32,6 +32,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: solid red;
 }
 
 body {
@@ -52,12 +53,12 @@ body {
 
 @media (min-width: 375px) {
   #appWrap {
-    grid-template: 10px auto auto /  1000px ;
+    grid-template: auto auto auto /  calc(50vw - 500px) 1000px auto;
     gap: 0;
     grid-template-areas:  
-      " a "
-      " b "
-      " c " ;
+      ". a ."
+      ". b ."
+      ". c ." ;
   }
 }
 

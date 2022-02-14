@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div id="appWrap">
-      {/* <Navbar /> */}
+      <Navbar />
       <TopRow />
       <BottomRow />
     </div>

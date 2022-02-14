@@ -99,18 +99,21 @@
   }
   #topPhotoContainer {
     grid-area: x;
+    height: 100%;
     align-self: end;
   }
   #descriptiveText {
     grid-area: y;
-    height: 75%;
-    /* align-self: center; */
+    height: 100%;
   }
   #descriptiveText h3 {
     font-size: var(--0);
   }
   #descriptiveText p {
     font-size: var(--sub4);
+  }
+  #descriptiveText a {
+    margin-top: 20px;
   }
   #photoDiv {
     height: 100%;

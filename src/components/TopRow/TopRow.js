@@ -11,13 +11,13 @@ import hero3d from "../../images/desktop-image-hero-3.jpg";
 export default function TopRow() {
   return (
     <div id="topContainer">
-        <Navbar />
+        {/* <Navbar /> */}
       <section id="topPhotoContainer">
-        <div  id="mainPhoto">
+        {/* <div  id="mainPhoto"> */}
           {(
             <img  id="photoDiv" srcSet={`${hero1m} 375w,${hero1d} 840w`} alt="hero image" height="100%" width="100%"/>
           ) || <img src={hero1m} alt="hero image" />}
-        </div>
+        {/* </div> */}
         <div id="arrowButtons">
           <svg
             width="14"

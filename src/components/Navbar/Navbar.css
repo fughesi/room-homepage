@@ -118,12 +118,17 @@
 @media (min-width: 375px) {
   #navBar {
     background-color: rgba(0, 0, 0, 0);
+    width: 60%;
+    position: absolute;
+    justify-content: center;
   }
   #navBar li a {
     color: var(--white);
   }
-  #navMenu {
-    display: block;
-    position: absolute;
+  #toggler,
+  #hamburger,
+  #hamburgerLinesAreHere {
+    display: none;
+    visibility: hidden;
   }
 }
