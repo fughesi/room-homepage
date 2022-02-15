@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import Slider from "../Slider/Slider";
 import "./TopRow.css";
 import hero1m from "../../images/mobile-image-hero-1.jpg";
 import hero2m from "../../images/mobile-image-hero-2.jpg";
@@ -13,7 +14,7 @@ export default function TopRow() {
     <div id="topContainer">
       <section id="topPhotoContainer">
         {/* <div  id="mainPhoto"> */}
-        {(
+        {/* {(
           <img
             id="photoDiv"
             srcSet={`${hero1m} 375w,${hero1d} 840w`}
@@ -21,8 +22,9 @@ export default function TopRow() {
             height="100%"
             width="100%"
           />
-        ) || <img src={hero1m} alt="hero image" />}
+        ) || <img src={hero1m} alt="hero image" />} */}
         {/* </div> */}
+        <Slider />
         <div id="arrowButtons">
           <div id="leftButton">
             <svg
@@ -39,6 +41,7 @@ export default function TopRow() {
               />
             </svg>
           </div>
+
           <div id="rightButton">
             <svg
               width="14"

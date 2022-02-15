@@ -72,6 +72,9 @@
 
   margin: 0;
   background-color: var(--white);
+
+  display: none;
+  visibility: hidden;
 }
 #navBar li {
   display: flex;
@@ -86,7 +89,9 @@
   color: var(--veryDarkGray);
 }
 
-/* states */
+/****** 
+ states 
+*******/
 
 #toggler:checked + #hamburger > div {
   transform: rotate(135deg);
@@ -111,7 +116,14 @@
 #toggler:checked ~ #navMenu {
   display: block;
   transition: all 250ms ease;
+  
+  height: 100px;
+  width: 100%;
 }
+
+/*************
+ media queries 
+ *************/
 
 @media (min-width: 375px) {
   #navBar {
@@ -126,7 +138,7 @@
   }
   #toggler,
   #hamburger,
-  #hamburgerLinesAreHere {
+  #hamburgerLines {
     display: none;
     visibility: hidden;
   }
