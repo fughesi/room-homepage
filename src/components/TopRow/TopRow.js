@@ -13,8 +13,8 @@ export default function TopRow() {
   return (
     <div id="topContainer">
       <section id="topPhotoContainer">
-        {/* <div  id="mainPhoto"> */}
-        {/* {(
+        <div id="mainPhoto">
+          {/* {(
           <img
             id="photoDiv"
             srcSet={`${hero1m} 375w,${hero1d} 840w`}
@@ -23,8 +23,8 @@ export default function TopRow() {
             width="100%"
           />
         ) || <img src={hero1m} alt="hero image" />} */}
-        {/* </div> */}
-        <Slider />
+          <Slider />
+        </div>
         <div id="arrowButtons">
           <div id="leftButton">
             <svg

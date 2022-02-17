@@ -102,11 +102,19 @@
     display: grid;
     grid-template: 350px / 1.5fr 1fr;
     grid-template-areas: "x y";
+
+    /* overflow: hidden; */
   }
   #topPhotoContainer {
     grid-area: x;
     height: 100%;
+    width: 100%;
+
+    object-fit: cover;
     align-self: end;
+  }
+  #mainPhoto{
+    height: 100%;
   }
   #arrowButtons {
     bottom: 0px;
