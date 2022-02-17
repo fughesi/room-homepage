@@ -10,7 +10,7 @@ function App() {
   return (
     <div id="appWrap">
       <TopRow />
-      {/* <BottomRow /> */}
+      <BottomRow />
     </div>
   );
 }

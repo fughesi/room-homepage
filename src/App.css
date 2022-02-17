@@ -32,7 +32,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: solid red;
+  /* outline: solid red; */
 }
 
 body {
