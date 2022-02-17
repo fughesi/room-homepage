@@ -49,6 +49,26 @@ import hero3d from "../../images/desktop-image-hero-3.jpg";
 // }
 
 export default function Slider() {
+  // variables
+  const track = document.getElementById("unorderedList");
+  const slides = Array.from(track.children);
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+  const dotNav = document.getElementById("indicatorSection")
+  const dot = Array.from(dotNav.children)
+  const slideWidth = slides[0].getBoundingClientRect().width
+
+  console.log(slideWidth);
+
+  // create the carousel
+  slides.forEach((slide, index) => {
+    slide.style.left = slideWidth * index + "px"
+  })
+
+  nextButton.addEventListener("click", (e) => {
+    const currentSlide = track
+  })
+
   return (
     <main id="carouselContainer">
       <section id="photoSection">
