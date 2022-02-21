@@ -90,6 +90,7 @@ button {
 #unorderedList {
   position: absolute;
   height: 100%;
+  transition: transform 250ms ease-in;
 }
 
 #nav {

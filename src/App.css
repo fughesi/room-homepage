@@ -35,9 +35,18 @@
   /* outline: solid red; */
 }
 
+*::selection {
+  background: #fd8775;
+  color: #f1f1f1;
+}
+
 body {
   margin: 0;
   font-family: "Spartan", sans-serif;
+
+  height: 100vh;
+  background: #f1f1f1;
+  overflow: hidden;
 }
 
 #appWrap {
