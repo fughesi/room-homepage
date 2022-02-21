@@ -4,7 +4,7 @@ import leftArrow from "../../images/icon-left.svg";
 import rightArrow from "../../images/icon-right.svg";
 
 export default function BtnSlider({ direction, moveSlide }) {
-//   console.log(direction, moveSlide);
+  
   return (
     <button
       onClick={moveSlide}
