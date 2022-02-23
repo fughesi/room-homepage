@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "../Carousel/Carousel";
-// import Slider from "../Slider/Slider";
 import "./TopRow.css";
 import hero1m from "../../images/mobile-image-hero-1.jpg";
 import hero2m from "../../images/mobile-image-hero-2.jpg";
@@ -14,15 +13,6 @@ export default function TopRow() {
     <div id="topContainer">
       <section id="topPhotoContainer">
         <div id="mainPhoto">
-          {/* {(
-          <img
-            id="photoDiv"
-            srcSet={`${hero1m} 375w,${hero1d} 840w`}
-            alt="hero image"
-            height="100%"
-            width="100%"
-          />
-        ) || <img src={hero1m} alt="hero image" />} */}
           <Carousel />
         </div>
         <div id="arrowButtons">

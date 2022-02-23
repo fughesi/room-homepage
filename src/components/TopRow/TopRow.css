@@ -10,6 +10,7 @@
 }
 #mainPhoto {
   position: relative;
+  grid-area: x;
 }
 #mainPhoto #photoDiv {
   display: inline-block;
